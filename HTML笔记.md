@@ -69,11 +69,11 @@ HTML（Hyper Text Markup Language）：超文本标记语言
 
   常规元素（双标签）：
 
-  <标签名>内容</标签名>     比如<body>我是文字</body>
+  <标签名>内容</标签名>
 
   空元素（单标签）：
 
-  <标签名 />     比如<br />或<br>
+  <标签名 />
 
 **HTML标签关系**
 
@@ -85,13 +85,13 @@ HTML（Hyper Text Markup Language）：超文本标记语言
 
 **文档类型<!DOCTYPE>**
 
-文档类型 用来说明你用的XHTML或者HTML是什么版本。<!DOCTYPE html>告诉浏览器按照HTML5标准解析页面
+文档类型 用来说明你用的XHTML或者HTML是什么版本。< !DOCTYPE html >告诉浏览器按照HTML5标准解析页面
 
 **页面语言lang**
 
 lang指定该html标签所用的语言
 
-  <html lang=”en”>
+  < html lang="en" >
 
   en 定义语言为英文   zh-CN 定义语言为中文
 
@@ -268,11 +268,15 @@ src是引入资源的 href是跳转url的
 
  1.使用相应的id名标注跳转目标的位置
 
-​     <h3 id="two">第二集</h3>
+```html
+<h3 id="two">第二集</h3>
+```
 
- 2.使用 `<a href="#id名"> 链接文本 </a>`创建链接文本
+ 2.使用 < a href="#id名" > 链接文本 < /a >创建链接文本
 
-​    <a href="#two">
+```html
+<a href="#two">第二集</a>
+```
 
 ####  2.2.6 注释标签
 
@@ -284,13 +288,13 @@ src是引入资源的 href是跳转url的
 
 ####  2.2.7 路径
 
-<img src="C:\Users\Q\Desktop\新建文件夹\路径.png">
+< img src="C:\Users\...">
 
 #### 2.2.8 其他
 
 特殊字符：
 
-<img src="C:\Users\Q\Desktop\新建文件夹\特殊字符.png">
+< img src="C:\Users\..."> 
 
 写HTML时注意事项：
 
@@ -326,11 +330,11 @@ table用于定义一个表格标签
 
 tr用于定义表格中的行，必须嵌套在table标签中
 
-td用于定义表格中的单元格，必须嵌套在<tr></tr>中
+td用于定义表格中的单元格，必须嵌套在< tr >< /tr >中
 
 **表头单元格标签th：**
 
-一般表头单元格位于表格的第一行或第一列，并且文本加粗居中，只需用表头标签<th></th>替代相应的单元格标签<td></td>即可
+一般表头单元格位于表格的第一行或第一列，并且文本加粗居中，只需用表头标签< th >< /th >替代相应的单元格标签< td >< /td >即可
 
 **表格标题caption：**
 
@@ -383,9 +387,9 @@ td用于定义表格中的单元格，必须嵌套在<tr></tr>中
 
 #### 2.4.1 无序列表  ul
 
-<<ul></ul>中只能嵌套<li></li>,直接在<ul></ul>标签中输入其他标签或者文字的做法是不被允许的 
+< ul >< /ul >中只能嵌套< li >< /li >,直接在< ul >< /ul >标签中输入其他标签或者文字的做法是不被允许的 
 
-<<li>与</li>之间相当于一个容器，可容纳所有元素
+< li >与< /li >之间相当于一个容器，可容纳所有元素
 
 ```html
 <ul>
@@ -405,13 +409,13 @@ td用于定义表格中的单元格，必须嵌套在<tr></tr>中
 
 #### 2.4.2 有序列表  ol
 
-<<ol>标签中的type属性值为排序的序列号，不添加type属性时，有序列表默认从数字1开始排序
+< ol >标签中的type属性值为排序的序列号，不添加type属性时，有序列表默认从数字1开始排序
 
 常用的type属性值分别为是1、a、A、i、I
 
-<<ol reversed="reversed">中的reversed属性能够让有序列表中的序列倒序排列
+< ol reversed="reversed" >中的reversed属性能够让有序列表中的序列倒序排列
 
-<<ol start="3">中的start属性值为3，有序列表中的第一个序列号将从3开始排列
+< ol start="3" >中的start属性值为3，有序列表中的第一个序列号将从3开始排列
 
 ```html
 <ol type="A">
@@ -473,7 +477,7 @@ td用于定义表格中的单元格，必须嵌套在<tr></tr>中
 
 input是输入的意思
 
-<input />标签为单标签
+< input / >标签为单标签
 
 type属性设置不同的属性值用来指定不同的控件类型
 
@@ -635,23 +639,23 @@ cols="每行的字符数" rows="显示的行数"  （实际开发中不常用）
 
 ### 3.1 HTML5新增语义化标签
 
-头部标签：<header></header>
+头部标签：< header >< /header >
 
-导航标签：<nav></nav>
+导航标签：< nav >< /nav >
 
-内容标签：<article></article>
+内容标签：< article >< /article >
 
-定义文档中某个区域（与<div>类似）：<section></section>
+定义文档中某个区域（与< div >类似）：< section >< /section >
 
-侧边栏标签：<asider></asider>
+侧边栏标签：< asider >< /asider >
 
-尾部标签：<footer></footer>
+尾部标签：< footer >< /footer >
 
 ### 3.2 HTML5新增多媒体标签
 
 #### 3.2.1 视频
 
-视频标签：<video></video>
+视频标签：< video >< /video >
 
 所有浏览器支持 .mp4格式
 
@@ -677,7 +681,7 @@ muted = "muted"  静音播放
 
 #### 3.2.2 音频
 
-音频标签：<audio></audio>
+音频标签：< audio >< /audio >
 
 所有浏览器支持 .mp3格式
 

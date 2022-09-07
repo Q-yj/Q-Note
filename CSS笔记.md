@@ -12,7 +12,7 @@ CSS以HTML为基础，提供了丰富的功能，如字体、样式、背景的�
 
 ### 1.1 内联样式表
 
-内联样式表，就是把CSS代码和HTML代码放在同一个文件中，但和内部样式表不同，CSS样式不是在<style></style>标签对中定义，而是在标签的style属性中定义
+内联样式表，就是把CSS代码和HTML代码放在同一个文件中，但和内部样式表不同，CSS样式不是在< style >< /style >标签对中定义，而是在标签的style属性中定义
 
 ```css
 <标签名 style="属性1：属性值； 属性2：属性值； 属性3：属性值；">内容</标签名>
@@ -414,7 +414,7 @@ text-decoration属性通常用于给链接修改装饰效果
 
 ### 4.1 块级元素
 
-常见的块级元素有：<h1>~<h6>、<p>、<div>、<ul>、<ol>、<li>等，其中<div>标签是最典型的块级元素
+常见的块级元素有：< h1 >~< h6 >、< p >、< div >、< ul >、< ol >、< li >等，其中< div >标签是最典型的块级元素
 
 **特点：**
 
@@ -430,7 +430,7 @@ text-decoration属性通常用于给链接修改装饰效果
 
 行内元素也称内联元素
 
-常见的行内元素有<a>、<strong>、<b>、<em>、<i>、<del>、<s>、<ins>、<u>、<span>等，其中<span>标签是最典型的行内元素
+常见的行内元素有< a >、< strong >、< b >、< em >、< i >、< del >、< s >、< ins >、< u >、< span >等，其中< span >标签是最典型的行内元素
 
 **特点：**
 
@@ -445,7 +445,7 @@ text-decoration属性通常用于给链接修改装饰效果
 
 ### 4.3 行内块元素
 
-在行内元素中有几个特殊的标签<img>、<input>、<td>，可以对它们设置宽度高度和对齐属性，有些资料称它们为行内块元素
+在行内元素中有几个特殊的标签< img >、< input >、< td >，可以对它们设置宽度高度和对齐属性，有些资料称它们为行内块元素
 
 **特点：**
 
@@ -747,7 +747,7 @@ length 可以是数值或百分比的形式
 让一个正方形盒子变圆：
 
 ```css
-border-radius: 50%
+border-radius: 50%;
 ```
 
 也可以分别设定四个角
@@ -756,8 +756,8 @@ border-radius: 50%
 
 **盒子阴影：**
 
-```html
-box-shadow: offset-x offset-y [blur [spread]] [color] [inset]
+```css
+box-shadow: offset-x offset-y [blur [spread]] [color] [inset];
 ```
 
 |    值    |                   描述                   |
@@ -1134,11 +1134,11 @@ margin-left: -100px;  ——  让盒子向左移动自身宽度的一半
 display 用于设置一个元素应该如何显示
 
 ```css
-display: none;       隐藏对象
+display: none;       //隐藏对象
 ```
 
 ```css
-display: block;      除了转换块级元素，还有显示对象的意思
+display: block;      //除了转换块级元素，还有显示对象的意思
 ```
 
 display 隐藏元素后，不再占有原来的位置
@@ -1150,11 +1150,11 @@ display 隐藏元素后，不再占有原来的位置
 visibility 属性用于指定一个元素可见还是隐藏
 
 ```css
-visibility: visible;     元素可见
+visibility: visible;     //元素可见
 ```
 
 ```css
-visibility: hidden;      元素隐藏
+visibility: hidden;      //元素隐藏
 ```
 
 visibility 隐藏元素后，继续占有原来的位置
